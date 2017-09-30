@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   require 'sidekiq/web'
-
-  Rails.application.routes.draw do
-    mount Sidekiq::Web => '/sidekiq'
+  mount Sidekiq::Web => '/sidekiq'
+  mount Fae::Engine => '/admin'
+  namespace :admin do
   end
 end
