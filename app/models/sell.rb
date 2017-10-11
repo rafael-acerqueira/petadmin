@@ -8,10 +8,10 @@ class Sell < ApplicationRecord
   enum status: { finished: 0, canceled: 1 }
 
   has_many :sell_products
-  has_many :products, through: :sell_products
+  has_many :products, through: :sell_products, dependent: :destroy
 
   has_many :sell_services
-  has_many :services, through: :sell_services
+  has_many :services, through: :sell_services, dependent: :destroy
 
   belongs_to :discount
   belongs_to :client
