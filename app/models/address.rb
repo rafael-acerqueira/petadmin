@@ -9,5 +9,5 @@ class Address < ApplicationRecord
 
   def self.for_fae_index
     order(:id)
-  end  
+  end
 end
