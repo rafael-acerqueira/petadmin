@@ -1,6 +1,5 @@
-#addresses {
+#schedule_service_items {
   margin: 30px 0;
-  max-width: 515px;
   width: 100%;
   float: left;
 
@@ -15,15 +14,21 @@
 
   .remove_fields {
     @extend .button !optional;
-    float: right;
+    float: left;
+    margin: 28px 0 0 10px;
   }
 
   .links, .nested-fields{
-    float: right;
-    width: 100%;
+    float: left;
+    width: 55%;
   }
 
   .nested-fields {
     margin-bottom: 15px;
+
+    .input {
+      float: left;
+      margin-right: 5px;
+    }
   }
 }
